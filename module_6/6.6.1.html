@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function palindrome(str) {
+            str = str.toLowerCase().replace(/\s/g,'');
+            const len = Math.floor(str.length / 2);
+            for (let i = 0; i < len; i++)
+            if (str[i] !== str[str.length - i - 1]) {
+                return `Это слово не является палиндромом`;
+            }
+        return `Это слово является палиндромом`;
+        };
+
+        console.log(palindrome('Довод'));
+        console.log(palindrome('А роза упала на лапу Азора'));
+        console.log(palindrome('Сантиметр'));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let years = +prompt('Введите ваш возраст');
+        if (years < 18) {
+            alert(`Кредит вам не одобрен.`);
+        } else if (18 <= years && years <= 21) {
+            let sum = +prompt('Вам одобрен кредит, максимум 50000 \n Введите сумму кратную 1000');
+            total = sum % 1000;
+            if (total === 0) {
+                alert(`Вам выдан кредит на сумму: ${sum}`);
+            }
+        } else if (22 <= years && years <= 35) {
+            let sum = +prompt('Вам одобрен кредит, максимум 400000 \n Введите сумму кратную 1000');
+            total = sum % 1000;
+            if (total === 0) {
+                alert(`Вам выдан кредит на сумму: ${sum}`);
+            }
+        } else if (36 <= years && years <= 65) {
+            let sum = +prompt('Вам одобрен кредит, максимум 1000000 \n Введите сумму кратную 1000');
+            total = sum % 1000;
+            if (total === 0) {
+                alert(`Вам выдан кредит на сумму: ${sum}`);
+            }
+        }
+    </script>
+</body>
+
+</html>
